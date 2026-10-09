@@ -1,0 +1,10 @@
+server:
+  baseURL: "http://prometheus.localhost"
+
+scrapeConfigs:
+  garage:
+    enabled: true
+    job_name: "garage"
+    static_configs:
+      - targets:
+        - "garage-headless.garage.svc.cluster.local"

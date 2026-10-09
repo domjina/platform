@@ -1,0 +1,10 @@
+garage:
+  replicationFactor: 3
+  s3:
+    api:
+      rootDomain: "s3.garage.localhost"
+    web:
+      rootDomain: "garage.localhost"
+
+deployment:
+  replicaCount: 4
