@@ -1,0 +1,9 @@
+garage bucket api key:
+806a37794d27ea939d3525eec53bd2ae4ddd0c10df7b09d0af45334ae9b9fae3
+
+
+Garage access key id:
+GKdb40444b268cba9fb537b99c
+
+Garage access key secret:
+8b89bbe40c0aaf6aad4bbb79f6e07e02cfc945bcf183b419f1843c042ecb26eb

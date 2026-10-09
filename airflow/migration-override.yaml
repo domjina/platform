@@ -1,0 +1,19 @@
+data:
+  metadataSecretName: airflow.details
+
+apiServer:
+  args: ["bash", "-c", "exec airflow api-server --proxy-headers"]
+  env:
+    - name: FORWARDED_ALLOW_IPS
+      value: "*"
+
+config:
+  api:
+    base_url: http://airflow.localhost
+
+migrateDatabaseJob:
+  enabled: true
+  useHelmHooks: false
+
+postgresql:
+  enabled: false

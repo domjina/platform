@@ -1,0 +1,10 @@
+CREATE ROLE airflow 
+	CREATEDB
+	LOGIN
+	PASSWORD 'AirflowPassword123';
+
+CREATE DATABASE airflow_db;
+
+GRANT ALL PRIVILEGES ON DATABASE airflow_db TO airflow;
+
+GRANT ALL ON SCHEMA public TO airflow;
