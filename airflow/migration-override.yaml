@@ -17,3 +17,13 @@ migrateDatabaseJob:
 
 postgresql:
   enabled: false
+
+dagProcessor:
+  dagBundleConfigList:
+    - name: airflow_dags
+      classpath: "airflow.providers.git.bundles.git.GitDagBundle"
+      "kwargs": {
+        "tracking_ref": "main",
+        "refresh_interval": 300,
+        "git_conn_id": "DAGs"
+      }
